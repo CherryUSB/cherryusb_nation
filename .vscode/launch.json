@@ -1,0 +1,56 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "gdb-arm",
+            "type": "cppdbg",
+            "request": "launch",
+            "targetArchitecture": "arm",
+            "program": "blink",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "arm-none-eabi-gdb.exe",
+            "miDebuggerServerAddress": "localhost:2331",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": false
+                }
+            ],
+            "customLaunchSetupCommands": [
+                {
+                    "text": "target remote :2331",
+                    "description": "connect to server",
+                    "ignoreFailures": false
+                },
+                {
+                    "text": "file 'E:/Nation/N32H474/N32H47x_FreeRTOS_GCC/GCC/build/output.elf'",
+                    "description": "load file to gdb",
+                    "ignoreFailures": false
+                },
+                {
+                    "text": "load",
+                    "description": "download file to MCU",
+                    "ignoreFailures": false
+                },
+                {
+                    "text": "monitor reset",
+                    "description": "reset MCU",
+                    "ignoreFailures": false
+                },
+                {
+                    "text": "b main",
+                    "description": "set breakpoints at main",
+                    "ignoreFailures": false
+                },
+            ],
+            "launchCompleteCommand": "None",
+            //"preLaunchTask": "build"
+        }
+    ]
+}

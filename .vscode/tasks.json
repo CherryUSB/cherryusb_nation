@@ -1,0 +1,38 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{ //编译
+			"label": "Build Target",
+			"type": "shell",
+			"command": "make",
+			"options": {
+				"cwd": "${workspaceFolder}/GCC"
+			},
+			"problemMatcher": [
+				"$gcc"
+			]
+		},
+		{ //先删除后编译
+			"label": "Rebuild Target",
+			"type": "shell",
+			"command": "make clean",
+			"options": {
+				"cwd": "${workspaceFolder}/GCC"
+			},
+			"problemMatcher": [
+				"$gcc"
+			]
+		},
+		{ //编译并且下载
+			"label": "Download",
+			"type": "shell",
+			"command": "make Download",
+			"options": {
+				"cwd": "${workspaceFolder}/GCC"
+			},
+			"problemMatcher": [
+				"$gcc"
+			]
+		}
+	]
+}
