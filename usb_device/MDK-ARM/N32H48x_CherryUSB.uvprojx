@@ -988,7 +988,7 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>N32H487, USE_STDPERIPH_DRIVER</Define>
+              <Define>N32H487, USE_STDPERIPH_DRIVER,SYSCLK_SRC=SYSCLK_USE_HSE_PLL</Define>
               <Undefine></Undefine>
               <IncludePath>..\USBD;..\USER;..\BSP;..\..\firmware\CMSIS\core;..\..\firmware\CMSIS\device;..\..\firmware\n32h47x_48x_std_periph_driver\inc;..\..\CherryUSB\core;..\..\CherryUSB\common;..\..\CherryUSB\class\cdc;..\..\CherryUSB\class\hid;..\..\CherryUSB\class\msc;..\..\CherryUSB\class\hub;..\..\CherryUSB\class\video;..\..\CherryUSB\class\audio</IncludePath>
             </VariousControls>

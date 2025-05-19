@@ -1078,7 +1078,7 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>N32H487, USE_STDPERIPH_DRIVER,USBHS_HOST</Define>
+              <Define>N32H487, USE_STDPERIPH_DRIVER,SYSCLK_SRC=SYSCLK_USE_HSE_PLL,USBHS_HOST</Define>
               <Undefine></Undefine>
               <IncludePath>..\USBD;..\USER;..\BSP;..\..\firmware\CMSIS\core;..\..\firmware\CMSIS\device;..\..\firmware\n32h47x_48x_std_periph_driver\inc;..\..\CherryUSB\core;..\..\CherryUSB\common;..\..\CherryUSB\class\cdc;..\..\CherryUSB\class\hid;..\..\CherryUSB\class\msc;..\..\CherryUSB\class\hub;..\..\CherryUSB\class\audio;..\..\CherryUSB\class\video;..\..\middlewares\FreeRTOS\FreeRTOS-Kernel\include;..\..\middlewares\FreeRTOS\FreeRTOS-Kernel\portable\RVDS\ARM_CM4F;..\..\middlewares\FATFS</IncludePath>
             </VariousControls>
